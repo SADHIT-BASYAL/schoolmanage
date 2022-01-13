@@ -1,0 +1,26 @@
+﻿@model Smsproz.Models.cla
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>cla</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClaName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClaName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Claid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
